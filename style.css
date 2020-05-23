@@ -1,0 +1,205 @@
+:root {
+  --defualt-font: "Baloo Chettan 2", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 5rem 0 0 0;
+  margin: auto;
+  background: linear-gradient(to right, #039be5, #4caf50);
+  align-items: center;
+  font-family: var(--defualt-font);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.box__img {
+  height: 100%;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.box__title {
+  letter-spacing: 2px;
+}
+
+.box-animation {
+  animation: stylish 3s linear infinite;
+  animation-play-state: running;
+}
+
+.animate {
+  animation: rotate 2s linear infinite;
+  animation-play-state: running;
+}
+
+.box__title {
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.container-list {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #3949ab, #9575cd);
+  border-bottom: 5px solid #ffd600;
+  border-radius: 0 0 4px 4px;
+  color: #ffffff;
+}
+
+.container-list:hover {
+  background: #3949ab;
+}
+
+.container-list:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container-list__title {
+  font-size: 1.5rem;
+}
+
+.container-list__btn {
+  font-size: 2rem;
+}
+
+.active {
+  background: linear-gradient(to right, #1a237e, #ba68c8);
+}
+
+.player {
+  width: 100%;
+}
+
+.player__progress {
+  width: 0;
+  height: 0.4rem;
+  background: #3f51b5;
+}
+
+.player-btn-container {
+  display: flex;
+  background: #ff6d00;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player__btn {
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.player__btn--prev {
+  transform: rotate(180deg);
+}
+
+.player__btn--play {
+  font-size: 3rem;
+}
+
+/* animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stylish {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    padding: 0;
+  }
+  .main {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .main {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 746px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 746px) {
+  .main {
+    width: 60%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 564px) {
+  .main {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+}

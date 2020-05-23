@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/517b708206.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="box">
+        <img src="./img/img-music--1.jpg" alt="title image" class="box__img" />
+        <h2 class="box__title">No music is selected!</h2>
+      </div>
+      <div class="container" id="container"></div>
+      <div class="player">
+        <div class="player__progress"></div>
+        <div class="player-btn-container">
+          <div class="fa fa-play player__btn player__btn--prev"></div>
+          <div class="fa fa-play player__btn player__btn--play"></div>
+          <div class="fa fa-play player__btn player__btn--next"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
